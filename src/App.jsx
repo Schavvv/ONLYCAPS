@@ -22,6 +22,7 @@ import RegisterEmail from './pages/RegisterEmail';
 import VerifyEmail from './pages/VerifyEmail';
 import Orders from './pages/Orders';
 import Admin from './pages/Admin';
+import CapMeasurement from './pages/CapMeasurement';
 
 
 
@@ -69,6 +70,7 @@ function AppInner() {
           <Route path="/verify" element={<VerifyEmail />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/cap-measurement" element={<CapMeasurement />} />
         </Routes>
       </CartProvider>
     </SessionContext.Provider>
