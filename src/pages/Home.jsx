@@ -1,0 +1,107 @@
+import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <div className="bg-black text-white font-body pt-16">
+
+        {/* Hero Section */}
+        <section className="relative flex items-center w-full hero-short hero-background" style={{ marginTop: 0 }}>
+          <div className="flex flex-col justify-center items-start px-10 md:px-20 w-full md:w-2/3 lg:w-1/2 h-full relative z-10">
+            <h1 className="float-heading text-7xl md:text-8xl lg:text-9xl font-heading mb-4 tracking-wide text-white uppercase leading-tight"
+              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+              FITTED CAPS
+            </h1>
+            <p className="text-white text-base md:text-lg max-w-xl leading-relaxed mb-6"
+              style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
+              Discover the perfect fit with our premium collection of<br />
+              authentic fitted baseball caps and exclusive designs.
+            </p>
+            <Link
+              to="/fitted-caps"
+              className="btn-hover bg-white text-black px-8 py-3 md:px-10 md:py-4 rounded-full font-medium hover:bg-gray-200 transition text-sm md:text-base tracking-wide inline-block shadow-lg no-underline"
+            >
+              SHOP COLLECTION
+            </Link>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="section-divider" />
+
+        {/* 4-Grid Sections - SHOP SECTION with cross outline only */}
+        <section id="shop-grid" className="w-full dissolve-section">
+          <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr">
+            {/* Fitted Caps - Top Left */}
+            <Link to="/fitted-caps" className="clickable-section relative grid-section-1 min-h-[450px] md:min-h-[550px] flex items-center justify-center p-10 no-underline group border-b-2 md:border-b-2 md:border-r-2 border-white">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center text-center w-full">
+                <h2 className="grid-text text-4xl md:text-5xl lg:text-6xl font-heading mb-4 md:mb-6 tracking-wide text-white uppercase">FITTED CAPS</h2>
+                <div className="grid-btn btn-hover bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium text-sm md:text-base tracking-wide inline-block whitespace-nowrap">SHOP NOW</div>
+              </div>
+            </Link>
+
+            {/* A-Frames - Top Right */}
+            <Link to="/a-frames" className="clickable-section relative grid-section-2 min-h-[450px] md:min-h-[550px] flex items-center justify-center p-10 no-underline group border-b-2 md:border-b-2 border-white">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center text-center w-full">
+                <h2 className="grid-text text-4xl md:text-5xl lg:text-6xl font-heading mb-4 md:mb-6 tracking-wide text-white uppercase">A-FRAMES</h2>
+                <div className="grid-btn btn-hover bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium text-sm md:text-base tracking-wide inline-block whitespace-nowrap">SHOP NOW</div>
+              </div>
+            </Link>
+
+            {/* Trucker - Bottom Left */}
+            <Link to="/trucker" className="clickable-section relative grid-section-3 min-h-[450px] md:min-h-[550px] flex items-center justify-center p-10 no-underline group md:border-r-2 border-white">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center text-center w-full">
+                <h2 className="grid-text text-4xl md:text-5xl lg:text-6xl font-heading mb-4 md:mb-6 tracking-wide text-white uppercase">TRUCKER</h2>
+                <div className="grid-btn btn-hover bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium text-sm md:text-base tracking-wide inline-block whitespace-nowrap">SHOP NOW</div>
+              </div>
+            </Link>
+
+            {/* More Stuff - Bottom Right */}
+            <Link to="/more-stuff" className="clickable-section relative grid-section-4 min-h-[450px] md:min-h-[550px] flex items-center justify-center p-10 no-underline group">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center text-center w-full">
+                <h2 className="grid-text text-4xl md:text-5xl lg:text-6xl font-heading mb-4 md:mb-6 tracking-wide text-white uppercase">MORE STUFF</h2>
+                <div className="grid-btn btn-hover bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium text-sm md:text-base tracking-wide inline-block whitespace-nowrap">SHOP NOW</div>
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="section-divider" />
+
+        {/* About Section */}
+        <section id="about" className="about-background min-h-screen flex items-center py-20 dissolve-section">
+          <div className="container mx-auto px-4 md:px-20 relative z-10">
+            <div className="flex justify-center md:justify-end">
+              <div className="w-full md:w-2/3 lg:w-1/2">
+                <h2 className="font-heading text-black uppercase mb-8 md:mb-12 tracking-wide text-center md:text-left"
+                  style={{ fontSize: '4rem', lineHeight: 1.1, letterSpacing: 2 }}>
+                  ABOUT US
+                </h2>
+                <p className="text-black text-base md:text-lg leading-relaxed mb-4 md:mb-6 text-center md:text-left">
+                  Founded in 2024, ONLYCaps was born from a simple passion: providing the perfect fitted cap for every head. What started as a small collection of premium MLB fitted caps has grown into a curated destination for headwear enthusiasts.
+                </p>
+                <p className="text-black text-base md:text-lg leading-relaxed mb-6 md:mb-10 text-center md:text-left">
+                  We believe that a cap isn't just an accessory—it's a statement. Whether you're repping your favorite team, expressing your personal style, or looking for that perfect everyday fit, ONLYCaps delivers quality, authenticity, and style.
+                </p>
+                <div className="text-center md:text-left">
+                  <Link to="/about" className="inline-block bg-black text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-medium hover:bg-gray-800 transition text-sm md:text-base tracking-wide no-underline">
+                    LEARN MORE
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <Footer />
+    </>
+  );
+}
